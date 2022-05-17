@@ -23,7 +23,5 @@ public class Engine {
     public Engine(int power, String company) {
         this.power = power;
         this.company = company;
-
-
     }
 }
