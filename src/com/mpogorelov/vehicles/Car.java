@@ -53,16 +53,16 @@ public class Car {
     }
 
     // методы по заданию
-    void start(){
+    public void start(){
         System.out.println("Поехали");
     }
-    void stop(){
+    public void stop(){
         System.out.println("Останавливаемся");
     }
-    void turnRight(){
+    public void turnRight(){
         System.out.println("Поворот налево");
     }
-    void  turnLeft(){
+    public void turnLeft(){
         System.out.println("Поворот налево");
     }
 
