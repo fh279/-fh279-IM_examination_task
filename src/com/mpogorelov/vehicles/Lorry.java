@@ -16,6 +16,7 @@ public class Lorry extends Car {
 
     public Lorry(String marka, String carClass, int mass, Engine lorry_engine, Driver lorry_driver, int carrying) {
         super(marka, carClass, mass, lorry_engine, lorry_driver);
+        this.carrying = carrying;
     }
 
     @Override

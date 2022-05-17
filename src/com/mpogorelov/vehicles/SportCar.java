@@ -7,8 +7,9 @@ public class SportCar extends Car {
 
     private Double speed;
 
-    public SportCar(String marka, String carClass, int mass, Engine sportCar_engine, Driver truck_driver, int speed) {
+    public SportCar(String marka, String carClass, int mass, Engine sportCar_engine, Driver truck_driver, Double speed) {
         super(marka, carClass, mass, sportCar_engine, truck_driver);
+        this.speed = speed;
     }
 
     public Double getSpeed() {
@@ -27,7 +28,7 @@ public class SportCar extends Car {
                 "Car mass, kg: " + getMass() + "\n" +
                 "Car engine brand: " + getDefault_car_engine().getCompany() + "\n" +
                 "The full name of the driver assigned to the Car: " + getCar_driver().getFullName() + "\n" +
-                "car speed: " + getSpeed() +
+                "car speed: " + getSpeed() + "\n" +
                 "**********";
     }
 

@@ -26,16 +26,16 @@ public class Main {
 
         Lorry lorry = new Lorry("Tatra", "Heavy Vehicle", 8000, lorry_engine, lorry_driver, lorry_driver.getExperience());
         //                             SportCar(String marka, String carClass, int mass, Engine sportCar_engine, Driver truck_driver, int speed)
-        SportCar sportCar = new SportCar("Ferrari", "SportCar", 900, sport_car_engine, sport_car_driver, 100500);
+        SportCar sportCar = new SportCar("Ferrari", "SportCar", 900, sport_car_engine, sport_car_driver, 100. );
 
-        /*System.out.println("распечатаем что должно быть в дефолтной тачке...");
+        System.out.println("распечатаем что должно быть в дефолтной тачке...");
         System.out.println(defaultCar);
         System.out.println("распечатаем что должно быть в грузовике...");
         System.out.println(lorry);
         System.out.println("распечатаем что должно быть в спорткаре...");
-        System.out.println(sportCar);*/
+        System.out.println(sportCar);
 
-        System.out.println(sportCar.getSpeed());
+
 
 
 
