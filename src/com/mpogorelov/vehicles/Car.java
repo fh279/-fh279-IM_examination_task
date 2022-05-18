@@ -8,15 +8,15 @@ public class Car {
     private String marka;
     private String carClass;
     private int mass; // это есть в описании, но нет в схеме.
-    private Engine default_car_engine;
-    private Driver car_driver;
+    private Engine defaultCarEngine;
+    private Driver carDriver;
 
     // Конструктор для наследования дочерними классами
-    public Car(String marka, String carClass, int mass, Engine default_car_engine, Driver car_driver) {
+    public Car(String marka, String carClass, int mass, Engine defaultCarEngine, Driver carDriver) {
         this.carClass = carClass;
         this.mass = mass;
-        this.default_car_engine = default_car_engine;
-        this.car_driver = car_driver;
+        this.defaultCarEngine = defaultCarEngine;
+        this.carDriver = carDriver;
         this.marka = marka;
     }
 
@@ -33,12 +33,12 @@ public class Car {
         return mass;
     }
 
-    public Engine getDefault_car_engine() {
-        return default_car_engine;
+    public Engine getDefaultCarEngine() {
+        return defaultCarEngine;
     }
 
-    public Driver getCar_driver() {
-        return car_driver;
+    public Driver getCarDriver() {
+        return carDriver;
     }
 
     // Сеттеры. Завел их ради приличия.
@@ -54,12 +54,12 @@ public class Car {
         this.mass = mass;
     }
 
-    public void setDefault_car_engine(Engine default_car_engine) {
-        this.default_car_engine = default_car_engine;
+    public void setDefaultCarEngine(Engine defaultCarEngine) {
+        this.defaultCarEngine = defaultCarEngine;
     }
 
-    public void setCar_driver(Driver car_driver) {
-        this.car_driver = car_driver;
+    public void setCarDriver(Driver carDriver) {
+        this.carDriver = carDriver;
     }
 
     // Методы по заданию. Не стал их выводить на печать, потому что... ну серьезно?..)
@@ -85,8 +85,8 @@ public class Car {
                 "Car brand: " + marka + "\n" +
                 "Car class: " + carClass + "\n" +
                 "Car mass, kg: " + mass + "\n" +
-                "Car engine brand: " + default_car_engine.getCompany() + "\n" +
-                "The full name of the driver assigned to the Car: " + car_driver.getFullName() + "\n" +
+                "Car engine brand: " + defaultCarEngine.getCompany() + "\n" +
+                "The full name of the driver assigned to the Car: " + carDriver.getFullName() + "\n" +
                 "**********";
     }
 }

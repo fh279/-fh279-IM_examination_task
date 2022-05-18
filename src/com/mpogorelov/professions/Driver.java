@@ -1,9 +1,15 @@
 package com.mpogorelov.professions;
 
-public class Driver {
+public class Driver extends Person {
     private String fullName; // по схеме это поля в классе Driver нет, но есть по описанию.
     // В итоге сделаю так, что поле fullName есть и оно будет наследоваться дочерним классом Person.
     private int experience;
+
+    public Driver(String fullName, int age, int experience) {
+        super(fullName, age);
+        this.experience = experience;
+    }
+
 
     public String getFullName() {
         return fullName;
@@ -21,14 +27,15 @@ public class Driver {
         this.experience = experience;
     }
 
-    public Driver(String fullName, int experience) {
+  /*  public Driver(String fullName, int experience) {
         this.fullName = fullName;
         this.experience = experience;
-    }
+    }*/
 
     @Override
     public String toString() {
         return "Full name of the driver: " + fullName
-                + "years of experience: " + experience;
+                + "years of experience: " + experience
+                + "age of the driver, years" + getAge();
     }
 }

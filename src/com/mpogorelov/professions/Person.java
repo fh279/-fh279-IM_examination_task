@@ -2,12 +2,14 @@ package com.mpogorelov.professions;
 
 import com.mpogorelov.vehicles.Car;
 
-public class Person extends Driver {
+public class Person{
     private int age;
+    private String fullName;
 
 
-    public Person(String fullName, int experience, int age) {
-        super(fullName, experience);
+    public Person(String fullName, int age) {
+this.age = age;
+this.fullName = fullName;
     }
 
     public int getAge() {
@@ -18,10 +20,17 @@ public class Person extends Driver {
         this.age = age;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
     @Override
     public String toString() {
-        return "Full name of the drivet: " + getFullName()
-                + "years of experience: " + getExperience()
+        return "Full name of the driver: " + getFullName()
                 + "age: " + age;
     }
 
