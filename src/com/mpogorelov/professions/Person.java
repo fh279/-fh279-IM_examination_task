@@ -1,15 +1,13 @@
 package com.mpogorelov.professions;
 
-import com.mpogorelov.vehicles.Car;
-
-public class Person{
+public class Person {
     private int age;
     private String fullName;
 
 
     public Person(String fullName, int age) {
-this.age = age;
-this.fullName = fullName;
+        this.age = age;
+        this.fullName = fullName;
     }
 
     public int getAge() {
@@ -33,6 +31,4 @@ this.fullName = fullName;
         return "Full name of the driver: " + getFullName()
                 + "age: " + age;
     }
-
-
 }
